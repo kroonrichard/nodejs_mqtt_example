@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_mqtt_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kroonrichard/nodejs_mqtt_example.git"
+  },
+  "author": "Richard Kroon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kroonrichard/nodejs_mqtt_example/issues"
+  },
+  "homepage": "https://github.com/kroonrichard/nodejs_mqtt_example#readme",
+  "dependencies": {
+    "mqtt": "^2.17.0"
+  }
+}

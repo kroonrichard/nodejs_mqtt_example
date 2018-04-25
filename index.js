@@ -8,7 +8,7 @@ const client = require('mqtt').connect(config)
 
 client.on('connect', () => {
     console.log('Connected')
-    client.subscribe('/some/topic')
+    client.subscribe('/dht12/temp')
 })
 
 client.on('message', (topic, messageBuf) => {
@@ -16,9 +16,9 @@ client.on('message', (topic, messageBuf) => {
     console.log('Message: \n' + messageBuf.toString())
 })
 
-const repeatPublishSomething = () => {
-    client.publish('/some/topic', 'yoho yoho')
-    setTimeout(() => repeatPublishSomething(), 5000)
-}
+//const repeatPublishSomething = () => {
+//    client.publish('/some/topic', 'yoho yoho')
+//    setTimeout(() => repeatPublishSomething(), 5000)
+//}
 
-repeatPublishSomething()
+//repeatPublishSomething()

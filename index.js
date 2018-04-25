@@ -1,7 +1,7 @@
 const config = {
     host: "localhost",
     port: 1883,
-    mqttId: "some-unique-id"
+    clientId: "some-unique-id"
 }
 
 const client = require('mqtt').connect(config)
